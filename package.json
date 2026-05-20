@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "npm run watch",
     "build": "esbuild src/main.js --bundle --format=esm --outfile=main.js",
     "watch": "esbuild src/main.js --bundle --format=esm --outfile=main.js --watch"
   },
