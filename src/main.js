@@ -112,10 +112,6 @@ class ImproSamplePlugin extends Plugin {
           }),
       );
     });
-
-    this.onSettingsChange((data) => {
-      this.settings = { ...DEFAULT_SETTINGS, ...(data ?? {}) };
-    });
   }
 }
 

@@ -537,9 +537,6 @@ var ImproSamplePlugin = class extends Plugin {
         })
       );
     });
-    this.onSettingsChange((data) => {
-      this.settings = { ...DEFAULT_SETTINGS, ...data ?? {} };
-    });
   }
 };
 ImproSamplePlugin.register();
