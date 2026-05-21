@@ -1,4 +1,9 @@
-import { Modal, Plugin, PluginSettingTab, Setting } from "./pluginWorker.js";
+import {
+  Modal,
+  Plugin,
+  PluginSettingTab,
+  Setting,
+} from "@impro.social/impro-plugin";
 
 const DEFAULT_SETTINGS = {
   greeting: "Hello",
@@ -92,7 +97,7 @@ class SampleSettingTab extends PluginSettingTab {
   }
 }
 
-class ImproSamplePlugin extends Plugin {
+export default class ImproSamplePlugin extends Plugin {
   async onload() {
     const saved = await this.loadData();
     this.settings = { ...DEFAULT_SETTINGS, ...(saved ?? {}) };
@@ -114,5 +119,3 @@ class ImproSamplePlugin extends Plugin {
     });
   }
 }
-
-ImproSamplePlugin.register();
