@@ -412,7 +412,7 @@ var VirtualEl = class _VirtualEl {
     };
   }
 };
-self.addEventListener("message", async (event) => {
+self.onmessage = async (event) => {
   const message = event.data;
   if (!message || typeof message !== "object") return;
   if (message.type === "call") {
@@ -458,7 +458,7 @@ self.addEventListener("message", async (event) => {
     }
     return;
   }
-});
+};
 
 // src/main.js
 var DEFAULT_SETTINGS = {
