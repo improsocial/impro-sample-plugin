@@ -1,7 +1,7 @@
 {
   "id": "impro-sample-plugin",
   "name": "Impro Sample Plugin",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "author": "Impro",
   "description": "Starter reference plugin demonstrating commands, modals, and the host bridge."
 }
