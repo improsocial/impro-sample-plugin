@@ -104,7 +104,7 @@ export default class ImproSamplePlugin extends Plugin {
 
     this.addSettingTab(new SampleSettingTab());
 
-    this.addSidebarItem("lightning-bolt", "Open modal", () => {
+    this.addSidebarItem("lightning-bolt-line", "Open modal", () => {
       new SampleModal(this.settings).open();
     });
     this.app.on("post-context-menu", (menu) => {
